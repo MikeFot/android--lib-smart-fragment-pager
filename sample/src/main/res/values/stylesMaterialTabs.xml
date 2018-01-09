@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme.TabLayout">
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabTextColor">@color/tab_text_inactive</item>
+        <item name="tabSelectedTextColor">@color/tab_text_active</item>
+    </style>
+
+    <style name="AppTheme.TabLayout.Scrollable" parent="AppTheme.TabLayout">
+        <item name="tabMode">scrollable</item>
+    </style>
+
+    <style name="AppTheme.TabLayout.Fixed" parent="AppTheme.TabLayout">
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>
