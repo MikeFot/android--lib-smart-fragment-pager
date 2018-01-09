@@ -31,7 +31,15 @@ android {
             minifyEnabled false
         }
     }
+
+    android.libraryVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "smart-fragment-pager-${variant.name}-${semanticVersion}.apk"
+        }
+    }
+
 }
+
 
 dependencies {
     implementation "com.android.support:support-compat:$appCompatLibVersion"
