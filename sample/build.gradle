@@ -5,8 +5,6 @@ final String appCompatLibVersion = "27.0.2"
 android {
     compileSdkVersion 27
 
-
-
     defaultConfig {
         applicationId "com.michaelfotiadis.smartfragmentpagersample"
         minSdkVersion 14

@@ -1,9 +1,9 @@
 package com.michaelfotiadis.smartfragmentpagersample;
 
+import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 
 import com.michaelfotiadis.smartfragmentpager.SmartFragmentPagerAdapter;
@@ -64,18 +64,21 @@ public class MainActivity extends AppCompatActivity {
 
         pages.add(new SmartFragmentPagerPage.Builder()
                 .setNavBarTitle("News")
+                .setTabTitle("Your Feed")
                 .setTabIcon(R.drawable.ic_news)
                 .setFragment(PageFragment.newInstance("Please enjoy this awesome newsfeed!", R.color.bg_two))
                 .build());
 
         pages.add(new SmartFragmentPagerPage.Builder()
                 .setNavBarTitle("Movies")
+                .setTabTitle("Movies")
                 .setTabIcon(R.drawable.ic_movies)
                 .setFragment(PageFragment.newInstance("Watch a movie here!", R.color.bg_one))
                 .build());
 
         pages.add(new SmartFragmentPagerPage.Builder()
                 .setNavBarTitle("Extras")
+                .setTabTitle("Extras")
                 .setTabIcon(R.drawable.ic_extras)
                 .setFragment(PageFragment.newInstance("Extra, extra, read all about it", R.color.bg_three))
                 .build());
